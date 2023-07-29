@@ -3,6 +3,11 @@ from django.views.generic import CreateView
 from django.views.generic import DeleteView
 from django.views.generic import UpdateView
 
+def index(request):
+    context = {
+        }
+    return render(request, r'comentarios/index.html', context)
+
 class CommentCreateView(CreateView):
     Que = "onda"
 
@@ -12,4 +17,5 @@ class CommentDeleteView(DeleteView):
 
 class CommentUpdateView(UpdateView):
     Con = "la bida"
+
 
