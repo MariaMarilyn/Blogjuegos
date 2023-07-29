@@ -13,3 +13,11 @@ class Registro(CreateView):
     success_url =reverse_lazy('login')
     template_name = 'usuarios/registro.html'
 
+# Clara
+#from django.shortcuts import render
+from django.contrib.auth.views import LoginView
+
+# Resto de las importaciones
+
+class MiLoginView(LoginView):
+    template_name = 'usuarios/login.html'
