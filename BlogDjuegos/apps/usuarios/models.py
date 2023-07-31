@@ -5,6 +5,9 @@ class Usuario(AbstractUser):
     groups = models.ManyToManyField('auth.Group', related_name='usuarios')
     user_permissions = models.ManyToManyField('auth.Permission', related_name='usuarios')
 
+
+## Aca solamente para registrar un cambio y subir devuelta a git hub
+
 #Aca tube que utilizar you.com que es una IA para modificar el codigo porque me tiraba este error 
 
 #ERRORS:
