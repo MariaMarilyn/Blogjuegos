@@ -19,7 +19,8 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('users/', views.index),
+    path('login/', views.login),
+    path('register/', views.register),
 ]
 
     # include('apps.posts.urls') Esto queda acá por ahora
