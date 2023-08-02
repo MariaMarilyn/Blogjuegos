@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+app_name = 'usuarios'
+
+#url de la app+
 urlpatterns = [
     path('login/', views.login),
     path('register/', views.register),
+    path('registro/', views.Registro.as_view(), name='registro'),
 ]
 
     # include('apps.posts.urls') Esto queda acá por ahora
