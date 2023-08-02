@@ -17,3 +17,10 @@ urlpatterns = [
     path('registro/', Registro.as_view(), name='registro'),
     path('login/', LoginView.as_view(), name='login'),
 ]
+#from django.urls import path
+#from . import views
+
+urlpatterns = [
+    path('login/', views.login_view, name='login'),
+    # Agrega aquí más URLs para otras vistas de tu blog de juegos
+]
